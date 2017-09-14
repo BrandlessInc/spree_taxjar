@@ -1,0 +1,6 @@
+language: ruby
+
+before_install:
+  - mysql -u root -e "GRANT ALL ON *.* TO 'travis'@'%';"
+
+script: bundle exec rake
